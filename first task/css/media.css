@@ -1,0 +1,164 @@
+/* Mobile (Extra Small) - Up to 576px */
+@media (max-width: 576px) {
+
+    .hero-text {
+        top: 25% !important;
+
+    }
+
+    .search {
+        margin-top: -200px !important;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text h6 {
+        font-size: 18px;
+    }
+
+    .bold_content {
+        top: 138px !important;
+        left: 20px !important;
+        font-size: 14px !important;
+        font-weight: bolder !important;
+        width: 270px !important;
+    }
+
+    .light_content {
+        top: 190px !important;
+        left: 20px !important;
+        font-size: 12px !important;
+        width: 270px !important;
+    }
+
+    .bnr_contant h1 {
+        width: 250px !important;
+        top: 64px !important;
+        left: 69px !important;
+        font-size: 20px !important;
+        font-weight: bolder !important;
+        line-height: 140% !important;
+    }
+
+    .foot_sections {
+        text-align: center !important;
+    }
+
+    .swiper {
+        height: 300px;
+    }
+
+
+}
+
+/* Small Screens (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero-text {
+        top: 20% !important;
+
+    }
+
+    .search {
+        margin-top: -250px !important;
+    }
+
+    .bold_content {
+        top: 138px !important;
+        left: 20px !important;
+        font-size: 16px !important;
+        font-weight: bolder !important;
+        width: 260px !important;
+    }
+
+    .light_content {
+        top: 190px !important;
+        left: 20px !important;
+        font-size: 14px !important;
+        width: 260px !important;
+    }
+
+    .bnr_contant h1 {
+        width: 450px !important;
+        top: 64px !important;
+        left: 69px !important;
+        font-size: 24px !important;
+        font-weight: bolder !important;
+        line-height: 140% !important;
+    }
+
+    .swiper {
+        height: 350px;
+    }
+
+    .foot_sections {
+        text-align: center !important;
+    }
+
+
+
+}
+
+/* Medium Screens (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .bold_content {
+        top: 138px !important;
+        left: 20px !important;
+        font-size: 18px !important;
+        font-weight: bolder !important;
+        width: 260px !important;
+    }
+
+    .light_content {
+        top: 190px !important;
+        left: 20px !important;
+        font-size: 16px !important;
+        width: 260px !important;
+    }
+
+    .bnr_contant h1 {
+        width: 450px !important;
+        top: 64px !important;
+        left: 69px !important;
+        font-size: 24px !important;
+        font-weight: bolder !important;
+        line-height: 140% !important;
+    }
+
+    .foot_sections {
+        text-align: center !important;
+    }
+
+    .search {
+        margin-top: -120px !important;
+    }
+
+}
+
+/* Large Screens (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+    .bold_content {
+        top: 138px !important;
+        left: 20px !important;
+        font-size: 18px !important;
+        font-weight: bolder !important;
+        width: 260px !important;
+    }
+
+    .light_content {
+        top: 216px !important;
+        left: 20px !important;
+        font-size: 16px !important;
+        width: 260px !important;
+    }
+
+
+
+}
+
+/* Extra Large Screens (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Giga:wght@100..900&family=Manrope:wght@200..800&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+
+    <div class="container-lg container-fluid">
+        <!-- Navigation -->
+        <div>
+            <!-- Desktop Navbar -->
+            <nav class="navigation_bar d-none d-lg-flex align-items-center justify-content-between">
+                <div class="logo d-flex align-items-center" style="gap: 4px;">
+                    <div>
+                        <img src="./assets/images/Vector.png" alt="Vector">
+                    </div>
+                    <span style="font-size: 18px; font-weight: bolder;">my Dream Place</span>
+                </div>
+
+                <ul class="nav_list d-flex gap-4">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-2">
+                    <div class="notification">
+                        <i class="ri-notification-2-line"></i>
+                    </div>
+
+                    <!-- avatar -->
+                    <div class="avatar position-relative ">
+
+                        <div class="dropdown">
+                            <a class="btn btn-default dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="./assets/images/Ellipse 2.png" alt="avatar"><br>
+                            </a>
+
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div
+                                            class="profile_items d-flex align-items-center justify-content-start gap-2">
+                                            <i class="ri-user-3-line"></i>
+                                            <p>Manage account</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="profile_items d-flex align-items-center   gap-2">
+                                            <i class="ri-flight-takeoff-line"></i>
+                                            <p>My trips</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="profile_items d-flex align-items-center gap-2">
+                                            <i class="ri-wallet-2-line"></i>
+                                            <p>Reward and wallet</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="profile_items d-flex align-items-center gap-2">
+                                            <i class="ri-logout-box-r-line"></i>
+                                            <p>Sign out</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </nav>
+
+
+
+
+            <!-- Mobile Navbar -->
+            <nav class="d-lg-none mt-2">
+                <div class="d-flex align-items-center justify-content-between">
+                    <!-- Hamburger Icon -->
+                    <div id="menu-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="logo d-flex align-items-center" style="gap: 4px;">
+                        <div>
+                            <img src="./assets/images/Vector.png" alt="Vector">
+                        </div>
+                        <span style="font-size: 18px; font-weight: bolder;">my Dream Place</span>
+                    </div>
+
+                    <!-- Icons -->
+                    <div class=" d-flex align-items-center gap-2">
+                        <div class="notification">
+                            <i class="ri-notification-2-line"></i>
+                        </div>
+
+                        <!-- avatar -->
+                        <div class="avatar position-relative ">
+
+                            <div class="dropdown">
+                                <a class="btn btn-default dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/Ellipse 2.png" alt="avatar"><br>
+                                </a>
+
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div
+                                                class="profile_items d-flex align-items-center justify-content-start gap-2">
+                                                <i class="ri-user-3-line"></i>
+                                                <p>Manage account</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="profile_items d-flex align-items-center   gap-2">
+                                                <i class="ri-flight-takeoff-line"></i>
+                                                <p>My trips</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="profile_items d-flex align-items-center gap-2">
+                                                <i class="ri-wallet-2-line"></i>
+                                                <p>Reward and wallet</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="profile_items d-flex align-items-center gap-2">
+                                                <i class="ri-logout-box-r-line"></i>
+                                                <p>Sign out</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Mobile Menu -->
+                <ul id="mobile-menu" class="nav_list d-lg-none">
+                    <!-- Close Button -->
+                    <li id="close-menu" class="close-icon ms-auto me-3" style="width: 24px;">
+                        <i class="ri-close-line text-black"></i>
+                    </li>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!-- Hero section -->
+
+
+
+        <div class="hero d-flex flex-column">
+            <img src="./assets/images/Rectangle 2.png" alt="hero" class=" hero-banner-img">
+            <div class="hero-text text-center">
+                <h1>Enjoy Your Dream Vacation</h1>
+                <h6>Plan and book our perfect trip with expert advice, travel tips, destination information, and
+                    inspiration from us</h6>
+            </div>
+
+
+            <!-- search -->
+            <div class="search shadow-lg ">
+
+
+
+                <div class="container">
+                    <div class="row g-1 g-md-2">
+                        <!-- Destination -->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="input_fields d-flex align-items-center border rounded">
+                                <img src="./assets/images/bxs-map 1.png"
+                                    style="width: 20px; height: 20px; margin-top: 0;" alt="">
+                                <input type="text" class="form-control border-0 shadow-none"
+                                    placeholder="Where you go?">
+                            </div>
+                        </div>
+
+                        <!-- Arrival Date -->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                            <div class="input_fields d-flex align-items-center  border rounded">
+                                <img src="./assets/images/calendar 1.png"
+                                    style="width: 20px; height: 20px; margin-top: 0;" alt="">
+                                <input class="form-control border-0 shadow-none arrival_date" type="text"
+                                    placeholder="check in ">
+                            </div>
+                        </div>
+
+                        <!-- Return Date -->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                            <div class="input_fields d-flex align-items-center  border rounded">
+                                <img src="./assets/images/calendar 1.png"
+                                    style="width: 20px; height: 20px; margin-top: 0;" alt="">
+                                <input class="form-control border-0 shadow-none return_date" type="text"
+                                    placeholder="check out ">
+                            </div>
+                        </div>
+
+                        <!-- Guests -->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="input_fields d-flex align-items-center border rounded">
+                                <img src="./assets/images/user-square 1.png"
+                                    style="width: 20px; height: 20px; margin-top: 0;" alt="">
+                                <input type="text" class="form-control border-0 shadow-none" placeholder="Guests">
+                            </div>
+                        </div>
+
+                        <!-- Search Button -->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 ">
+                            <div>
+                                <a href="search.html" class="btn btn-primary   w-100"
+                                    style="padding: 18px 18px; ">Search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- alert -->
+        <div class="alert alert-warning " role="alert">
+            <i class="ri-alert-line"></i>
+            Check the latest COVID-19 restrictions before you travel. <a href="#">Learn more</a>
+        </div>
+
+
+        <!-- dream vacation -->
+        <div class="dream_content">
+            <h6>Enjoy your dream vacation</h6>
+            <div>Plan and book our perfect trip with expert advice, travel tips, destination information and inspiration
+                from us </div>
+
+        </div>
+        <div class="dream  mb-5   d-flex  flex-wrap">
+            <div class="drim_vacation  ">
+                <div class="drim_img">
+                    <img src="./assets/images/Rectangle 8.png" alt="image">
+                </div>
+                <div class="country ps-2">Australia</div>
+                <div class="property ps-2">2246 properties</div>
+            </div>
+
+            <div class="drim_vacation  ">
+                <div class="drim_img">
+                    <img src="./assets/images/Rectangle 9.png" alt="image">
+                </div>
+                <div class="country ps-2">Japan</div>
+                <div class="property ps-2">1157 properties</div>
+            </div>
+
+            <div class="drim_vacation  ">
+                <div class="drim_img">
+                    <img src="./assets/images/Rectangle 10.png" alt="image">
+                </div>
+                <div class="country ps-2">New Zealand</div>
+                <div class="property ps-2">2046 properties</div>
+            </div>
+
+            <div class="drim_vacation  ">
+                <div class="drim_img">
+                    <img src="./assets/images/Rectangle 11.png" alt="image">
+                </div>
+                <div class="country ps-2">Greece</div>
+                <div class="property ps-2">1946 properties</div>
+            </div>
+        </div>
+
+        <!-- next trip -->
+
+        <div class="trip">
+            Get inspiration for your next trip
+        </div>
+
+        <div class=" img_container row ">
+            <div class="trip_img  col-12 col-sm-6 col-lg-4  position-relative">
+                <img src="./assets/images/trip_first.png" alt="img">
+                <p class="position-absolute bold_content  flex-wrap">Sydeny’s 10 most fashionable 5 star hotels</p>
+                <p class="position-absolute light_content flex-wrap">Browse the fastest growing tourism sector in the
+                    heart of Australia tourism capital ....</p>
+            </div>
+
+            <div class="trip_img col-12 col-sm-6 col-lg-4  position-relative">
+                <img src="./assets/images/Rectangle 16.png" alt="img">
+                <p class="position-absolute bold_content flex-wrap">Top cities for Vegan Travellers</p>
+                <p class="position-absolute light_content flex-wrap">Top sites where you do not have to worry about
+                    being a vegan. Our tourist guide is here...</p>
+            </div>
+
+            <div class="trip_img col-12 col-sm-6 col-lg-4  position-relative">
+                <img src="./assets/images/Rectangle 17.png" alt="img">
+                <p class="position-absolute bold_content flex-wrap">World’s top destinations during and post covid
+                    timeline</p>
+                <p class="position-absolute light_content flex-wrap">Pandemic is still intact and will be here for a
+                    longer time. Here’s where your next destination...</p>
+            </div>
+        </div>
+
+
+        <!-- Popular hotels -->
+
+        <div>
+            <div class="trip">Popular hotels</div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/popular_1.png" alt="pop">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/popular_2.png" alt="pop">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/popular_3.png" alt="pop">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/popular_4.png" alt="pop">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/popular_1.png" alt="pop">
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+
+        <!-- banner -->
+        <div class="baner position-relative">
+            <img src="./assets/images/Rectangle 18.png" alt="">
+            <div class="bnr_contant">
+                <h1 class="position-absolute">
+                    Download the mobile application for bonus coupons and travel codes
+                </h1>
+
+                <button type="button" class="download btn btn-primary position-absolute">Download mobile app</button>
+            </div>
+
+        </div>
+
+
+        <!-- footer -->
+
+        <div>
+            <div class="footer text-center">
+                <h1>Explore the world with My Dream place</h1>
+                <h6><a href="#">Discover new places and experiences</a></h6>
+            </div>
+
+
+            <footer class="container py-4">
+
+                <div class="row foot_menu gy-3">
+                    <div class="foot_sections col-12 col-lg-4">
+                        <div class="logo d-flex align-items-center justify-content-center justify-content-lg-start"
+                            style="gap: 4px;">
+                            <div>
+                                <img src="./assets/images/Vector.png" alt="Vector">
+                            </div>
+                            <span style="font-size: 18px; font-weight: bolder;">my Dream Place</span>
+                        </div>
+                        <p>Your next go-to companion for travel</p>
+                    </div>
+
+                    <div class="foot_sections col-6 col-md-3 col-lg-2">
+                        <h5>Company</h5>
+                        <p>About</p>
+                        <p>Job</p>
+                        <p>Newsroom</p>
+                        <p>Advertising</p>
+                        <p>Contact us</p>
+                    </div>
+
+
+
+                    <div class="foot_sections  col-6 col-md-3 col-lg-2">
+                        <h5>Terms & Policies</h5>
+                        <p>Privacy Policy</p>
+                        <p>Terms of use</p>
+                        <p>Accessibility</p>
+                        <p>Reward system policy</p>
+                    </div>
+
+                    <div class="foot_sections  col-6 col-md-3 col-lg-2">
+                        <h5>Explore</h5>
+                        <p>Australia</p>
+                        <p>New Zealand</p>
+                        <p>United States (USA)</p>
+                        <p>Greece</p>
+                        <p>Maldives</p>
+                        <p>Singapore</p>
+                        <p class="d-none not_showing">UK</p>
+                        <p class="d-none not_showing">England</p>
+                        <p class="see_more text-primary" style="cursor: pointer;">See more</p>
+                    </div>
+
+                    <div class="foot_sections col-6 col-md-3 col-lg-2">
+                        <h5>Help</h5>
+                        <p>Support</p>
+                        <p>Cancel your bookings</p>
+                        <p>Use Coupon</p>
+                        <p>Refund Policies</p>
+                        <p>International Travel Docs</p>
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/place.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

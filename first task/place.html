@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>places</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Giga:wght@100..900&family=Manrope:wght@200..800&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+   
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/place.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="container-lg container-fluid">
+        <!-- Desktop Navbar -->
+        <nav class="navigation_bar d-none d-lg-flex align-items-center justify-content-between">
+            <div class="logo">
+                <img src="./assets/images/Frame 14.png" alt="logo">
+            </div>
+
+            <ul class="nav_list d-flex gap-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-2">
+                <div class="notification">
+                    <i class="ri-notification-2-line"></i>
+                </div>
+                <!-- avatar -->
+                <div class="avatar position-relative ">
+
+                    <div class="dropdown">
+                        <a class="btn btn-default dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/images/Ellipse 2.png" alt="avatar"><br>
+                        </a>
+
+
+                        <ul class="dropdown-menu ">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="profile_items d-flex align-items-center justify-content-start gap-2">
+                                        <i class="ri-user-3-line"></i>
+                                        <p>Manage account</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="profile_items d-flex align-items-center   gap-2">
+                                        <i class="ri-flight-takeoff-line"></i>
+                                        <p>My trips</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="profile_items d-flex align-items-center gap-2">
+                                        <i class="ri-wallet-2-line"></i>
+                                        <p>Reward and wallet</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="profile_items d-flex align-items-center gap-2">
+                                        <i class="ri-logout-box-r-line"></i>
+                                        <p>Sign out</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Mobile Navbar -->
+        <nav class="d-lg-none mt-2">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Hamburger Icon -->
+                <div id="menu-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+
+                <!-- Logo -->
+                <div class="logo d-flex align-items-center" style="gap: 4px;">
+                    <div>
+                        <img src="./assets/images/Vector.png" alt="Vector">
+                    </div>
+                    <span style="font-size: 18px; font-weight: bolder;">my Dream Place</span>
+                </div>
+
+                <!-- Icons -->
+                <div class="d-none d-sm-flex align-items-center gap-2">
+                    <div class="notification">
+                        <i class="ri-notification-2-line"></i>
+                    </div>
+                    <!-- avatar -->
+                    <div class="avatar position-relative ">
+
+                        <div class="dropdown">
+                            <a class="btn btn-default dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="./assets/images/Ellipse 2.png" alt="avatar"><br>
+                            </a>
+
+
+                            <ul class="dropdown-menu show">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div
+                                            class="profile_items d-flex align-items-center justify-content-start gap-2">
+                                            <i class="ri-user-3-line"></i>
+                                            <p>Manage account</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="profile_items d-flex align-items-center   gap-2">
+                                            <i class="ri-flight-takeoff-line"></i>
+                                            <p>My trips</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="profile_items d-flex align-items-center gap-2">
+                                            <i class="ri-wallet-2-line"></i>
+                                            <p>Reward and wallet</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="profile_items d-flex align-items-center gap-2">
+                                            <i class="ri-logout-box-r-line"></i>
+                                            <p>Sign out</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <ul id="mobile-menu" class="nav_list d-lg-none">
+                <!-- Close Button -->
+                <li id="close-menu" class="close-icon ms-auto me-3" style="width: 24px;">
+                    <i class="ri-close-line text-black"></i>
+                </li>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="container-fluid">
+
+        <div class=" mt-2 mt-md-3 mt-lg-0">
+
+
+            <!-- hero section -->
+
+            <hero>
+                <div class="img_container">
+
+
+                    <div class="container">
+
+
+                        <div class=" d-flex flex-wrap   " style="gap: 20px;">
+                            <div class="">
+                                <div class="first_img ">
+                                    <img src="./assets/images/Rectangle 28.png" width="100%" alt="img">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="d-flex flex-xxl-column " style="gap: 16px;">
+                                    <div class="second_img">
+                                        <img src="./assets/images/Rectangle 29.png" width="100%" alt="img">
+                                    </div>
+
+                                    <div class="third_img">
+                                        <img src="./assets/images/right_30.png" width="100%" alt="img">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </hero>
+
+        </div>
+
+
+    </div>
+
+    <!-- Details -->
+
+    <div class="container-lg container-fluid d-flex " style="gap: 14px; padding: 30px 0 13px 14px;">
+        <p>Overview</p>
+        <p>Rooms</p>
+        <p>Guest Reviews</p>
+    </div>
+
+    <div class="details">
+        <div class="container-sm container-fluid">
+
+
+            <div class="d-flex flex-column flex-lg-row   justify-content-between" style="gap: 30px;">
+                <div class="">
+
+                    <div class="">
+
+                        <h2>Lakeside Motel Warefront</h2>
+                        <div>
+                            <img src="./assets/images/Group 5.png" alt=""><span class="ms-2">4.5(1200 Reviews)</span>
+                        </div>
+
+                        <div class="address">
+                            <i class="ri-map-pin-line " style="color: #2F80ED;"></i>
+                            Lorem ipsum road, Tantruim-2322, Melbourne, Australia
+                        </div>
+
+                        <div class="overview_container">
+
+                            <div class="overview">
+                                <h5>Overview</h5>
+
+                                <p>Featuring free WiFi throughout the property, Lakeside Motel Waterfront offers
+                                    accommodations
+                                    in Lakes
+                                    Entrance, 19 mi
+                                    from Bairnsdale. Free private parking is available on site.
+                                    <br><br>
+
+                                    Each room at this motel is air conditioned and comes with a flat-screen TV. You will
+                                    find a
+                                    kettle,
+                                    toaster and a
+                                    microwave in the room. Each room is fitted with a private bathroom. Guests have
+                                    access
+                                    to
+                                    barbecue
+                                    facilities and a
+                                    lovely large lawn area. Metung is 6.8 mi from Lakeside Motel Waterfront, while
+                                    Paynesville
+                                    is 14 mi
+                                    from the property.
+                                    <br><br>
+                                    Couples in particular like the location – they rated it 9.2 for a two-person trip.
+                                </p>
+
+
+
+                            </div>
+
+                            <hr>
+
+                            <div class="facility">
+                                <h5>Top facilities</h5>
+
+                                <div class="d-flex flex-column flex-sm-row">
+
+                                    <div class="">
+                                        <div class=" items d-flex align-items-center ">
+                                            <div>
+                                                <img src="./assets/images/home-wifi 1.png" alt="">
+                                            </div>
+                                            <p class=" m-0">Free wifi</p>
+                                        </div>
+
+                                        <div class="items d-flex align-items-center ">
+                                            <div>
+                                                <img src="./assets/images/wind 1.png" alt="">
+                                            </div>
+                                            <p class=" m-0">Air Conditioning</p>
+                                        </div>
+
+                                        <div class="items d-flex align-items-center ">
+                                            <div>
+                                                <img src="./assets/images/car 1.png" alt="">
+                                            </div>
+                                            <p class=" m-0">Parking available</p>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="item_container">
+                                        <div class="items d-flex align-items-center ">
+                                            <div>
+                                                <img src="./assets/images/bag-tick-2 1.png" alt="">
+                                            </div>
+                                            <p class=" m-0">Business Services</p>
+                                        </div>
+
+                                        <div class="items d-flex align-items-center ">
+                                            <div>
+                                                <img src="./assets/images/lifebuoy 1.png" alt="">
+                                            </div>
+                                            <p class=" m-0">Swimming pool</p>
+                                        </div>
+
+                                        <div class="items d-flex align-items-center ">
+                                            <div>
+                                                <img src="./assets/images/like-1 1.png" alt="">
+                                            </div>
+                                            <p class=" m-0">Top rated in area</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--right map side -->
+                <div class="">
+
+                    <div class="d-flex flex-column flex-md-row flex-lg-column  justify-content-center"
+                        style="gap: 16px;">
+
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12596.992128898752!2d147.98356760902377!3d-37.87788180134932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b255fd8771a7939%3A0xc94e5fbeb904d617!2sLakes%20Waterfront%20Motel!5e0!3m2!1sen!2sin!4v1741775351631!5m2!1sen!2sin"
+                                width="400" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="locations">
+                            <h5>Explore the area</h5>
+
+                            <div class="areas">
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                        <div>
+                                            <img src="./assets/images/bxs-plane-alt 2.png" alt="">
+                                        </div>
+                                        <p class="m-0">Hotel Penselvenyia</p>
+                                    </div>
+
+                                    <span>2 min drive</span>
+                                </div>
+
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                        <div>
+                                            <img src="./assets/images/bxs-map 1.png" alt="">
+                                        </div>
+                                        <p class="m-0">Travis Bakery store house</p>
+                                    </div>
+
+                                    <span>10 min drive</span>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                        <div>
+                                            <img src="./assets/images/bxs-map 1.png" alt="">
+                                        </div>
+                                        <p class="m-0">Olivia Johnson Garden</p>
+                                    </div>
+
+                                    <span>15 min drive</span>
+                                </div>
+
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                        <div>
+                                            <img src="./assets/images/bxs-map 1.png" alt="">
+                                        </div>
+                                        <p class="m-0">Norman Opera Circus</p>
+                                    </div>
+
+                                    <span>18 min drive</span>
+                                </div>
+
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center" style="gap: 8px;">
+                                        <div>
+                                            <img src="./assets/images/bxs-map 1.png" alt="">
+                                        </div>
+                                        <p class="m-0">Rockdeset hotel</p>
+                                    </div>
+
+                                    <span>32 min drive</span>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Available rooms -->
+
+        <div class="container-sm container-fluid">
+            <div class="avail_heading">
+                <h5>Available rooms</h5>
+            </div>
+
+            <div class="chk_room">
+
+
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 py-1 py-sm-2 py-lg-0 ">
+                        <div class="conditions d-flex align-items-center">
+
+                            <img src="./assets/images/calendar 1.png" alt="">
+
+                            <input class="arrival_date" type="text" placeholder="March 18,2022">
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 py-1  col-sm-6 col-lg-3">
+                        <div class="conditions d-flex align-items-center">
+                            <img src="./assets/images/calendar 1.png" alt="">
+
+                            <input class="return_date" type="text" placeholder="March 20,2022">
+                        </div>
+                    </div>
+
+
+                    <div class="col-12  py-1 col-sm-6 col-lg-3">
+                        <div class="conditions d-flex align-items-center">
+                            <img src="./assets/images/user-square 1.png" alt="">
+                            <input type="text" placeholder="2 adult, 1 room">
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-lg-3  " style="height: 44px; padding-top: 5px;">
+                        <a href="place.html" class="btn btn-primary w-100" style="height: 44px;">check availability</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- room list -->
+
+
+
+
+        <div class="container-lg container-fluid">
+            <div class="book_list d-flex flex-wrap">
+                <div class="poster position-relative">
+                    <div class="back_img ">
+                        <div class="position-absolute">
+                            <img src="./assets/images/logo_white.png" alt="">
+
+                        </div>
+                        <div class="coupen_code position-absolute">
+                            20% off
+                            Use Promotional Coupon Code:
+                            <span style="color: #FFD723;">Orlando</span>
+                        </div>
+
+                        <div class="position-absolute">
+                            <img src="./assets/images/Frame.png" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="room_feture">
+                        <div>
+                            <img src="./assets/images/Rectangle 70.png" alt="img">
+                        </div>
+                        <h6>Standard twin ben, Multiple beds</h6>
+
+                        <div class="fetures">
+
+
+
+                            <div class=" d-flex align-items-center" style="gap: 10px;">
+                                <div>
+                                    <img src="./assets/images/bag-tick-2 2.png" alt="">
+                                </div>
+                                <span>300 sq ft</span>
+                            </div>
+
+                            <div class=" d-flex align-items-center" style="gap: 10px;">
+                                <div>
+                                    <img src="./assets/images/lifebuoy 2.png" alt="">
+                                </div>
+                                <span>Sleeps 3</span>
+                            </div>
+
+                            <div class=" d-flex align-items-center" style="gap: 10px;">
+                                <div>
+                                    <img src="./assets/images/like-1 2.png" alt="">
+                                </div>
+                                <span>1 double bed and 1 twin bed</span>
+                            </div>
+
+                        </div>
+
+
+                        <a href="place.html" class="reserve_btn btn btn-primary">Reserve suite</a>
+                    </div>
+
+
+                </div>
+
+                <div>
+                    <div class="room_feture">
+                        <div>
+                            <img src="./assets/images/Rectangle 71.png" alt="img">
+                        </div>
+                        <h6>Standard twin ben, 1 Queen bed</h6>
+
+                        <div class="fetures">
+
+
+
+                            <div class=" d-flex align-items-center" style="gap: 10px;">
+                                <div>
+                                    <img src="./assets/images/bag-tick-2 2.png" alt="">
+                                </div>
+                                <span>300 sq ft</span>
+                            </div>
+
+                            <div class=" d-flex align-items-center" style="gap: 10px;">
+                                <div>
+                                    <img src="./assets/images/lifebuoy 2.png" alt="">
+                                </div>
+                                <span>Sleeps 3</span>
+                            </div>
+
+                            <div class=" d-flex align-items-center" style="gap: 10px;">
+                                <div>
+                                    <img src="./assets/images/like-1 2.png" alt="">
+                                </div>
+                                <span>1 double bed and 1 twin bed</span>
+                            </div>
+
+                        </div>
+
+
+                        <a href="place.html" class="reserve_btn btn btn-primary">Reserve suite</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- alert -->
+        <div class="container-sm container-fluid">
+            <div class="alert alert-warning " role="alert">
+                <i class="ri-alert-line"></i>
+                Check the latest COVID-19 restrictions before you travel. <a href="#">Learn more</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- footer -->
+
+    <div class="footer_background">
+        <footer class="container py-4">
+
+
+
+            <div class="row foot_menu gy-3">
+                <div class="foot_sections col-12 col-lg-4">
+                    <img class="mb-2" src="./assets/images/Frame 14.png" alt="Logo">
+                    <p>Your next go-to companion for travel</p>
+                </div>
+
+                <div class="foot_sections col-6 col-md-3 col-lg-2">
+                    <h5>Company</h5>
+                    <p>About</p>
+                    <p>Job</p>
+                    <p>Newsroom</p>
+                    <p>Advertising</p>
+                    <p>Contact us</p>
+                </div>
+
+
+
+                <div class="foot_sections  col-6 col-md-3 col-lg-2">
+                    <h5>Terms & Policies</h5>
+                    <p>Privacy Policy</p>
+                    <p>Terms of use</p>
+                    <p>Accessibility</p>
+                    <p>Reward system policy</p>
+                </div>
+
+                <div class="foot_sections  col-6 col-md-3 col-lg-2">
+                    <h5>Explore</h5>
+                    <p>Australia</p>
+                    <p>New Zealand</p>
+                    <p>United States (USA)</p>
+                    <p>Greece</p>
+                    <p>Maldives</p>
+                    <p>Singapore</p>
+                    <p class="d-none not_showing">UK</p>
+                    <p class="d-none not_showing">England</p>
+                    <p class="see_more text-primary" style="cursor: pointer;">See more</p>
+                </div>
+
+                <div class="foot_sections col-6 col-md-3 col-lg-2">
+                    <h5>Help</h5>
+                    <p>Support</p>
+                    <p>Cancel your bookings</p>
+                    <p>Use Coupon</p>
+                    <p>Refund Policies</p>
+                    <p>International Travel Docs</p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/place.js"></script>
+</body>
+
+</html>

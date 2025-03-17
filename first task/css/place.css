@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img_container {
+    background-image: linear-gradient(to bottom, #F4F4F4, #FFFFFF);
+    padding-top: 32px;
+}
+
+.address {
+    font-size: 14px;
+    line-height: 140%;
+    padding-top: 12px;
+}
+
+.details {
+    background-color: #F4F4F4;
+    padding: 40px;
+}
+
+.overview_container {
+    background-color: white;
+    border-radius: 6px;
+}
+
+.overview {
+    margin-top: 31px;
+    padding: 24px 30px;
+
+}
+
+.overview h5 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.overview p {
+    font-style: 16px;
+}
+
+.facility {
+    padding: 26px 30px;
+
+}
+
+.facility>div {
+    gap: 119px;
+}
+
+.facility h5 {
+    font-size: 18px;
+    font-weight: bolder;
+
+
+}
+
+.items {
+    gap: 15px;
+}
+
+.items p {
+    font-size: 15px;
+    line-height: 140%;
+}
+
+.item_container {
+    margin-bottom: 16px;
+}
+
+
+.locations h5 {
+    padding: 35px 0 22px 0;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+
+.areas>div {
+    padding-bottom: 12px;
+}
+
+.avail_heading h5 {
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 40px 0 24px 0;
+
+}
+
+.chk_room {
+    background-color: white;
+    padding: 10px 12px;
+}
+
+.chk_room input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.conditions {
+    gap: 10px;
+    background-color: #F2F2F2;
+    padding: 11px 12px 12px 12px;
+}
+
+.book_list {
+    margin-top: 16px;
+
+}
+
+.poster {
+    width: 400px;
+    height: 340px;
+    background-image: linear-gradient(to bottom, #4796FF, #2366BF);
+    padding: 35px 0 28px 28px;
+
+    border-radius: 6px;
+
+}
+
+.back_img div:first-child {
+    top: 72px;
+    left: 28px;
+
+}
+
+.back_img div:last-child {
+    right: 69px;
+    top: 35px;
+}
+
+.coupen_code {
+    width: 195px;
+    top: 124px;
+    left: 28px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+
+
+.room_feture {
+    background-color: white;
+    margin: 0 0 0 15px;
+    border-radius: 6px;
+}
+
+.room_feture img {
+    width: 100%;
+}
+
+.room_feture h6 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 20px auto 18px 20px;
+}
+
+.fetures {
+    margin: 20px auto 18px 20px;
+}
+
+.fetures span {
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.reserve_btn {
+    padding: 12px 18px;
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 24px;
+}
+
+.footer_background {
+    background-color: #F2F2F2;
+}
+
+/* media */
+
+@media (min-width:300px) AND (max-width:576px) {
+    .details {
+        padding: 40px 0 !important;
+    }
+
+    .dropdown-menu {
+        transform: translate3d(-158px, 2.5px, 0px) !important;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: 240px !important;
+
+    }
+
+    .facility>div {
+        gap: 0px !important;
+    }
+
+
+    .poster {
+        display: none;
+    }
+
+    .fetures {
+        margin: 20px 0 0 0 !important;
+    }
+
+    .room_feture {
+
+
+        margin: 0 0 0 0 !important;
+
+    }
+
+    .room_feture h6 {
+        font-size: 18px;
+        text-align: center;
+        margin: 20px auto 18px 0 !important;
+    }
+
+    .book_list {
+        --bs-gutter-x: 0 !important;
+    }
+
+    .fetures span {
+        font-size: 14px !important;
+        line-height: 100% !important;
+    }
+
+    .reserve_btn {
+        padding: 8px 12px !important;
+        width: auto !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+
+
+
+}
+
+/* 
+@media (min-width:576px) AND (max-width:668px) {}
+
+@media (min-width:669px) AND (max-width:768px) {}
+
+@media (min-width:769px) AND (max-width:950px) {} */
+
+@media (min-width:576px) AND (max-width:1200px) {
+    .poster {
+        display: none;
+    }
+
+    .dropdown-menu.show {
+        transform: translate3d(-148px, 2.5px, 0px) !important;
+    }
+}
+
+@media (min-width:1201px) AND (max-width:1399px) {
+    .poster {
+        display: none;
+    }
+
+    .dropdown-menu.show {
+        transform: translate3d(-128px, 1.5px, 0px) !important;
+    }
+}
+
+@media (min-width:1400px) {
+  
+
+    .dropdown-menu .show {
+        transform: translate3d(-128px, 0.0px, 0px) !important;
+    }
+}
