@@ -983,9 +983,6 @@
         position: absolute;
     }
 
-    .dropdown-menu {
-        transform: translate3d(-102px, 86px, 0px) !important;
-    }
 
     .dropdown {
         margin-top: -20px !important;
